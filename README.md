@@ -19,3 +19,6 @@ A lightweight, zero-dependency web application security auditing tool that inspe
 ### 1. Audit Default Target
 ```bash
 python3 apex_scanner.py
+
+
+python3 apex_scanner.py [https://yourwebsite.com](https://yourwebsite.com)
