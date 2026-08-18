@@ -1,0 +1,35 @@
+{
+  "target_url": "https://example.com",
+  "required_headers": [
+    {
+      "name": "Content-Security-Policy",
+      "severity": "HIGH",
+      "impact": "Mitigates Cross-Site Scripting (XSS) and data injection attacks.",
+      "recommendation": "Define a strict CSP header restricting script-src and object-src."
+    },
+    {
+      "name": "Strict-Transport-Security",
+      "severity": "HIGH",
+      "impact": "Protects against SSL-stripping and man-in-the-middle (MitM) attacks.",
+      "recommendation": "Set 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload'."
+    },
+    {
+      "name": "X-Frame-Options",
+      "severity": "MEDIUM",
+      "impact": "Prevents Clickjacking by restricting framing permissions.",
+      "recommendation": "Set 'X-Frame-Options: DENY' or 'SAMEORIGIN'."
+    },
+    {
+      "name": "X-Content-Type-Options",
+      "severity": "MEDIUM",
+      "impact": "Prevents MIME-type sniffing vulnerabilities.",
+      "recommendation": "Set 'X-Content-Type-Options: nosniff'."
+    },
+    {
+      "name": "Referrer-Policy",
+      "severity": "LOW",
+      "impact": "Controls how much referrer information is included with requests.",
+      "recommendation": "Set 'Referrer-Policy: strict-origin-when-cross-origin'."
+    }
+  ]
+}
